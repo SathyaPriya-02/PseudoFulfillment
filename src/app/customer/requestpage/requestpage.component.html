@@ -1,0 +1,150 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<body>
+	<section class="login">
+		<div class="login_box">
+			<div class="left">
+				<div class="top_link"><a href="#"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
+				<div class="right-text">
+					<h2>Unlock new possibilities with a fresh start</h2>
+					<h5>Request your new SIM card and connect to a  <br>world of opportunities!</h5>
+				</div>
+				<div class="right-inductor"><img src="https://lh3.googleusercontent.com/fife/ABSRlIoGiXn2r0SBm7bjFHea6iCUOyY0N2SrvhNUT-orJfyGNRSMO2vfqar3R-xs5Z4xbeqYwrEMq2FXKGXm-l_H6QAlwCBk9uceKBfG-FjacfftM0WM_aoUC_oxRSXXYspQE3tCMHGvMBlb2K1NAdU6qWv3VAQAPdCo8VwTgdnyWv08CmeZ8hX_6Ty8FzetXYKnfXb0CTEFQOVF4p3R58LksVUd73FU6564OsrJt918LPEwqIPAPQ4dMgiH73sgLXnDndUDCdLSDHMSirr4uUaqbiWQq-X1SNdkh-3jzjhW4keeNt1TgQHSrzW3maYO3ryueQzYoMEhts8MP8HH5gs2NkCar9cr_guunglU7Zqaede4cLFhsCZWBLVHY4cKHgk8SzfH_0Rn3St2AQen9MaiT38L5QXsaq6zFMuGiT8M2Md50eS0JdRTdlWLJApbgAUqI3zltUXce-MaCrDtp_UiI6x3IR4fEZiCo0XDyoAesFjXZg9cIuSsLTiKkSAGzzledJU3crgSHjAIycQN2PH2_dBIa3ibAJLphqq6zLh0qiQn_dHh83ru2y7MgxRU85ithgjdIk3PgplREbW9_PLv5j9juYc1WXFNW9ML80UlTaC9D2rP3i80zESJJY56faKsA5GVCIFiUtc3EewSM_C0bkJSMiobIWiXFz7pMcadgZlweUdjBcjvaepHBe8wou0ZtDM9TKom0hs_nx_AKy0dnXGNWI1qftTjAg=w1920-h979-ft" alt=""></div>
+			</div>
+			<div class="right">
+                <div class="contact">
+                    <form #User="ngForm" (ngSubmit)="onSubmit()">
+
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              First Name<input type="text" [(ngModel)]="user.first_name" name="first_name"  id="first_name" class="form-control form-control-lg" #first_name ="ngModel" required [class.is-invalid]=" first_name.invalid &&  first_name.touched" pattern="^[A-Za-z ]+$" minlength="3" />
+                              <div *ngIf="first_name.touched"> 
+                                <div *ngIf="first_name.invalid"> 
+                                  <small class="text-danger" *ngIf=" first_name.errors?.['required']">please enter first name.</small>
+                                  <small class="text-danger" *ngIf="first_name.errors?.['pattern']">name should contain only alphabets</small>
+                                  <small class="text-danger" *ngIf="first_name.errors?.['minlength']">name should have Min 3 Character</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <div class="col-md-6 mb-4">
+          
+                            <div class="form-outline">
+                              Last Name<input type="text"  [(ngModel)]="user.last_name" id="last_name" name="last_name" class="form-control form-control-lg"  #last_name ="ngModel" required [class.is-invalid]="last_name.invalid &&  last_name.touched" pattern="^[A-Za-z]+$"/>
+                              <div *ngIf="last_name.touched"> 
+                                <div *ngIf="last_name.invalid"> 
+                                  <small class="text-danger" *ngIf="last_name.errors?.['required']">please enter first name.</small>
+                                  <small class="text-danger" *ngIf="last_name.errors?.['pattern']">name should contain only alphabets</small>
+                                  
+                                </div>
+                              </div>
+
+                            </div>
+          
+                          </div>
+                        </div>
+          
+                        <div class="row">
+                          <div class="col-md-6 mb-4 d-flex align-items-center">
+                            <div class="form-outline datepicker w-100">
+                              Date of Birth<input type="date"  [(ngModel)]="user.dob" name="dob" class="form-control form-control-lg" id="date" #dob ="ngModel" required [class.is-invalid]="dob.invalid &&  dob.touched"/>
+                              <div *ngIf="dob.touched"> 
+                                <div *ngIf="dob.invalid"> 
+                                  <small class="text-danger" *ngIf="dob.errors?.['required']">please select date of birth.</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="col-md-6 mb-4">
+          
+                            <h6 class="mb-2 pb-1">Gender: </h6>
+          
+                            <div class="form-check form-check-inline">
+                              <input type="radio" name="inlineRadioOptions" id="femaleGender"  [(ngModel)]="user.gender"
+                                value="female" checked  #gender ="ngModel" required [class.is-invalid]="gender.invalid &&  gender.touched"/>
+                                <div *ngIf="dob.touched"> 
+                                  <div *ngIf="dob.invalid"> 
+                                    <small class="text-danger" *ngIf="dob.errors?.['required']">please select one</small>
+                                  </div>
+                                </div>
+                              <label class="form-check-label" for="femaleGender">Female</label>
+                            </div>
+          
+                            <div class="form-check form-check-inline">
+                              <input type="radio" name="inlineRadioOptions" id="maleGender"  [(ngModel)]="user.gender"
+                                value="male"  #dob ="ngModel" required [class.is-invalid]="dob.invalid &&  dob.touched" />
+                                <div *ngIf="dob.touched"> 
+                                  <div *ngIf="dob.invalid"> 
+                                    <small class="text-danger" *ngIf="dob.errors?.['required']">please select one</small>
+                                  </div>
+                                </div>
+                              <label class="form-check-label" for="maleGender">Male</label>
+                            </div>
+          
+                            <div class="form-check form-check-inline">
+                              <input type="radio" name="inlineRadioOptions" id="otherGender" [(ngModel)]="user.gender"
+                                value="other" #dob ="ngModel" required [class.is-invalid]="dob.invalid &&  dob.touched"/>
+                                <div *ngIf="dob.touched"> 
+                                  <div *ngIf="dob.invalid"> 
+                                    <small class="text-danger" *ngIf="dob.errors?.['required']">please select one</small>
+                                  </div>
+                                </div>
+                              <label class="form-check-label" for="otherGender">Other</label>
+                            </div>
+          
+                          </div>
+                        </div>
+          
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+          
+                            <div class="form-outline">
+                              Email Id<input type="email" id="emailid" [(ngModel)]="user.emailid" name="email" class="form-control form-control-lg"  #email ="ngModel" required [class.is-invalid]="email.invalid && email.touched" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" />
+                              <div *ngIf="dob.touched"> 
+                                <div *ngIf="dob.invalid"> 
+                                  <small class="text-danger" *ngIf="email.errors?.['required']">please enter email id</small>
+                                  <small class="text-danger" *ngIf="email.errors?.['pattern']">Please enter a valid email address (e.g., user@example.com).
+                                  </small>
+                                </div>
+                              </div>
+                            </div>
+          
+                          </div>
+                          <div class="col-md-6 mb-4 pb-2">
+          
+                            <label class="form-label select-label">Location</label>
+                            <select class="select form-control-lg" [(ngModel)]="user.location" name="location" >
+                               
+                              <option value="" enabled>Select</option>
+                              <option value="Chennai">Chennai</option>
+                              <option value="Coimbatore">Coimbatore</option>
+                              <option value="Madurai">Madurai</option>
+                            </select>
+                            
+          
+                          </div>
+
+                          <!-- <div class="col-md-6 mb-4 pb-2"> -->
+                            <!-- <label class="form-label select-label">SIM Card Count</label> -->
+                            <!-- <div class="input-group">
+                              <button class="btn btn-outline-secondary" type="button" (click)="decreaseSimCount()">-</button>
+                              <input type="number" class="form-control form-control-lg" [(ngModel)]="user.simCount" name="simCount" />
+                              <button class="btn btn-outline-secondary" type="button" (click)="increaseSimCount()">+</button>
+                            </div> -->
+                          <!-- </div> -->
+                        </div>
+          
+                       <div class="mt-4 pt-2">
+                          <input type="submit" value="Submit" />
+                          <input type="reset" value="Clear all"/>
+                        </div>
+          
+                      </form>
+				</div>
+
+				
+			</div>
+		</div>
+	</section>
+</body>

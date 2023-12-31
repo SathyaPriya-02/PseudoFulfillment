@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="card">
+    <h2 class="card-title">Pro Wallet Payment</h2>
+    <div class="card-body">
+      <div class="centered-content">
+        <p>Your Pro Wallet Amount: ₹{{ prowallet }}</p>
+      </div>
+
+      <div *ngIf="prowallet < price">
+        <div class="danger" role="alert">
+          Insufficient Balance. Please recharge your wallet.
+        </div>
+        <!-- Add the "Recharge" button here -->
+        <!-- <button class="btn btn-primary" (click)="rechargeWallet()">Recharge</button> -->
+        <button class="btn btn-secondary" (click)="goBack()">Back</button>
+      </div>
+
+      <div *ngIf="prowallet >= price">
+        <!-- Add the payment details here -->
+        <div class="centered-content">
+          <p>Plan Name: {{ planname }}</p>
+          <p>Price: ₹{{ price }}</p>
+          <p>Validity: {{ validity }} days</p>
+        </div>
+
+        <!-- Make Payment and Cancel buttons with spacing -->
+        <div class="centered-content">
+          <button class="btn btn-custom-red equal-size" (click)="makePayment()">Make Payment</button>
+          <span class="mx-2"></span> <!-- Add spacing here -->
+          <button class="btn btn-secondary equal-size" (click)="cancelPayment()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

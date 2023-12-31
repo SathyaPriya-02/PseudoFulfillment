@@ -1,0 +1,65 @@
+<app-usernavbar></app-usernavbar>
+<div class="search-container">
+  <div class="search-form">
+    <input type="text" [(ngModel)]="searchText" name="searchText" placeholder="Search Plans" (input)="onSubmit()">
+    <!-- The (input)="onSubmit()" event will trigger a search as the user types -->
+    <button type="submit" class="btn btn-primary">Search</button>
+  </div>
+</div>
+<!-- Render the existing data if the searchText is empty or searchResults is empty -->
+<div *ngIf="searchText === '' || searchResults.length === 0">
+  <div *ngFor="let plan of plans">
+    <div class="card w-100">
+      <div class="card-body">
+        <h5 class="card-title">{{ plan.planname }}</h5>
+        <p class="card-text">
+          {{ plan.planDescription }}
+          <br>
+          Validity: {{ plan.validity }} days
+          <br>
+          Price: ₹ {{ plan.price }}
+        </p>
+        <!-- Dropdown menu for payment methods for each card -->
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle red-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pay
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="onPay(plan)">Debit card</a></li>
+            <li><a class="dropdown-item" (click)="onWallet(plan)">Pro Wallet</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Render the search results when searchText is not empty and searchResults is not empty -->
+<div *ngIf="searchText !== '' && searchResults.length > 0">
+  <ng-container *ngFor="let plan of searchResults">
+    <div class="card w-100">
+      <div class="card-body">
+        <h5 class="card-title">{{ plan.planName }}</h5>
+        <p class="card-text">
+          {{ plan.planDescription }}
+          <br>
+          Validity: {{ plan.validity }} days
+          <br>
+          Price: ₹ {{ plan.price }}
+        </p>
+        <!-- Dropdown menu for payment methods for each card -->
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle red-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="toggleDropdown()">
+            Pay
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="onPay(plan)">Debit card</a></li>
+            <li><a class="dropdown-item" href="onWallet(plan)">Pro Wallet</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,95 @@
+/* .card-box {
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-top: 10%;
+    box-shadow: 0 4px 6px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0.1, 0.1, 0.1, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+}
+
+.profile-info h4 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.profile-info p {
+    font-size: 16px;
+}
+
+.profile-actions .btn {
+    border-radius: 2em;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.detail-item {
+    text-align: center;
+}
+
+.detail-item p {
+    color: #98a6ad;
+    font-size: 14px;
+}
+
+.detail-item h4 {
+    color: #333;
+    font-size: 20px;
+} */
+
+.user-info-title {
+    font-size: 15px;
+}
+
+.user-info-data {
+    color : red;
+    font-size: 12px;
+}
+
+
+.add-to-wallet-button {
+    background-color: salmon;
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+  
+    /* Add a hover effect with red background color */
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-wallet-button:hover {
+    background-color: red;
+  }
+
+  h3 {
+    color: red;
+    font-weight: bold;
+  }
+
+  h6{
+    font-weight: bold;
+
+  }
+
+  p{
+    font-weight:500;
+  }

@@ -1,0 +1,94 @@
+/* Custom CSS for your form */
+
+/* Adjustments to the left column */
+.left {
+    background-color: red;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    height: 30%;
+    
+}
+
+.left .top_link a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 90%;
+}
+
+.left .right-text {
+    margin-top: 20px;
+}
+
+.left h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.left h5 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Adjustments to the right column */
+.right {
+    background-color: white;
+    padding: 2rem;
+}
+
+.right .contact {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.right h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.right input[type="text"],
+.right input[type="date"],
+.right input[type="email"],
+.right select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.right input[type="radio"] {
+    margin-right: 5px;
+}
+
+.right label {
+    font-size: 16px;
+}
+
+.right input[type="submit"],
+.right input[type="reset"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Additional styling for select input */
+.select.form-control-lg {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+

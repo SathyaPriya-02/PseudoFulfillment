@@ -1,0 +1,57 @@
+<app-usernavbar></app-usernavbar>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<section style="background-color: #f4f5f7; overflow: hidden; ">
+    <div class="container py-5 h-150 margin-top = -20px">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-6 mb-4 mb-lg-0 margin-top=5px">
+                <div class="card mb-3" style="padding: 25px; margin: 5px;">
+                    <div class="card-body p-2">
+                        <h3>User Profile</h3>
+                        <hr class="mt-3 mb-2"> <!-- Added margin-top here -->
+                        <div class="row pt-1">
+                            <div class="col-6 mb-2">
+                                <h6 class="user-info-title">Name</h6>
+                                <p class="text-muted user-info-data">{{recievedData.first_name}} {{recievedData.last_name}}</p>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <h6  class="user-info-title">Phone</h6>
+                                <p class="text-muted user-info-data">{{recievedData.phonenumber}}</p>
+                            </div>
+                        </div>
+                        <!-- Added space between sections -->
+                        <div style="margin-top: 20px;"></div>
+                        <h3>Account Details</h3>
+                        <hr class="mt-3 mb-2"> <!-- Added margin-top here -->
+                        <div class="row pt-1">
+                            <div class="col-6 mb-2">
+                                <h6 class="user-info-title">Current Plan</h6>
+                                <p class="text-muted user-info-data">{{recievedData.current_plan}}</p>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <h6  class="user-info-title">Expire date</h6>
+                                <p class="text-muted user-info-data">{{recievedData.expire_date}}</p>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="row pt-1">
+                            <div class="col-6 mb-2">
+                                <h6 class="user-info-title">Status</h6>
+                                <p class="text-muted user-info-data">{{recievedData.status}}</p>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <h6 class="user-info-title">Pro Wallet</h6>
+                                <p class="text-muted user-info-data">{{recievedData.prowallet}}</p>
+                            </div>
+                        </div>
+
+                        <button (click)="addValueToProWallet()" class="add-to-wallet-button">Add to Wallet</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

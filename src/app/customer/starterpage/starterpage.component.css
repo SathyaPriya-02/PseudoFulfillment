@@ -1,0 +1,67 @@
+body {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .content {
+    display: flex;
+  }
+  
+  .left-content {
+    width: 60%;
+  }
+  
+  .right-content {
+    width: 40%;
+  }
+  
+  .right-content img {
+    margin-top: 10px;
+  }
+  
+  h1 {
+    color: red;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .activation-link {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .activation-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style for the "Pay Now" button */
+  button {
+    background-color:#D95343; /* A different color before hover */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff0000; /* A different color on hover */
+  }
+  
+
+  .input-container {
+    margin-bottom: 10px; /* Adjust the value as needed to create the desired space */
+    margin-left: 20px;
+  }

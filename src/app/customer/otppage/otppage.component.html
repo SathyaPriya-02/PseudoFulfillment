@@ -1,0 +1,57 @@
+<body style="background-color: red" >
+  <div class="container-fluid">
+
+    <div class="wrapper vh-100">
+
+      <div class="row align-items-center h-100">
+
+        <div class="col-lg-4 offset-lg-4">
+
+          <div class="mx-auto" style="width: 400px">
+
+            <div class="card p-4">
+
+              <div class="d-flex justify-content-center">
+
+                <div class="icon-block">
+
+                  
+
+                </div>
+
+              </div> 
+
+              <div class="text-center my-4">
+
+                <h2 class="fw-bold">Enter OTP</h2>
+
+                <div class="text-muted"></div>
+
+              </div>
+
+              <div class="my-4">
+
+                <ng-otp-input  [(ngModel)]="userEnteredOtp" name="userEnteredOtp" (onInputChange)="onOtpChange($event)"  [config]="configOptions"></ng-otp-input>
+                <!-- <ng-otp-input  [(ngModel)]="userEnteredEmail" name="userEnteredEmail" (onInputChange)="onOtpChange($event)"  [config]="configOptions"></ng-otp-input> -->
+              </div>
+
+			  <button class="btn btn-lg w-100 mt-3 mb-4 py-3" [ngClass]="{'btn-light': !userEnteredOtp, 'custom-red-button': userEnteredOtp}"
+			  [style.color]="userEnteredOtp ? 'white' : 'black'" (click)="validateOtp()"  >
+			  {{ this.inputDigitLeft }}
+			</button>
+			
+			  
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>

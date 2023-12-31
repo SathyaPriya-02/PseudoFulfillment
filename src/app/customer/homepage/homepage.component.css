@@ -1,0 +1,110 @@
+body {
+    font-family: Tondo,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #ff0000; /* Red text color */
+    overflow: hidden; /* Prevent scrolling */
+}
+/* Style for carousel images */
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 0px;
+    height: 550px;
+}
+
+.image-container img {
+    
+    max-height: 490px; /* Automatically adjust the height */
+    margin-top: -10px;
+}
+.c-text {
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center; /* Align text in the center */
+    color: black;
+    size: 20%;
+}
+.red-text h1{
+    font-family: Helvetica;
+    color: red; /* Set the color to red */
+     /* Optionally, set the text to bold */
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+
+
+/* Style for the card container */
+.card {
+    
+    border-radius: 0; 
+    box-shadow: none;  
+}
+
+.card-body
+{
+    box-shadow: none;
+}
+
+/* Style for the image */
+.leftcard img {
+    max-width: 40%;
+    height: auto;
+    margin-right:40px;
+    border-radius: 0px;
+   
+    
+}
+
+.rightcard img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 10%;
+}
+
+/* Style for the card text */
+.lcard-text h2 {
+    color:#ff0000;
+    font-weight: bold;
+    margin-right: 27%;
+    padding: 10px;
+    margin-top: 5%;
+    font-size: 125%;
+   
+}
+
+.rcard-text h2 {
+    color:#ff0000;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 10px;
+    margin-top: 5%;
+   
+}
+
+.lcard-text ul {
+    color: black;
+    font-size: 125%;
+    text-align: justify;
+    padding: 10px;
+    
+}
+
+.rcard-text ul {
+    color: black;
+    font-size: 125%;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.big-text {
+    font-size: 35px; /* You can adjust the font size as needed */
+    font-weight: bold;
+    color: #FF0000; /* Red color */
+}
+.large-text {
+    font-size: 15px; /* Adjust the font size as needed */
+  }

@@ -1,0 +1,61 @@
+header {
+    background-color: #ff0000; /* Red header background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.header-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push buttons to the right */
+}
+
+
+/* Style for logo image */
+.logo {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+.header-title {
+    font-size: 35px; /* Adjust the font size as needed */
+    margin-top: 5px;
+    margin-bottom:5px ;
+}
+
+.login-button-img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 0px; /* Add margin between the image and text */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+    
+    
+}
+
+.button-container a {
+    display: inline-block;
+    margin-right: 5px;
+    
+}
+
+.button-container p {
+    margin: 0;
+    text-align: center;
+}
+
+h1, .login-button-img, .button-container p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+
+
+
+

@@ -1,0 +1,76 @@
+.nav-tabs {
+    background-color: red; /* Background color of the navbar */
+    height: 80px; /* Adjust the height as needed */
+    align-items: center; /* Vertically center the content */
+    font-family: Tondo, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+  
+  .nav-tabs .nav-item {
+    margin-right: 2px; /* Adjust the spacing between nav items */
+    margin-left: 2px;
+  }
+  
+  .nav-link {
+    color: #fff; /* Text color of the nav links */
+    font-weight: normal; /* Font weight for the nav links */
+    border: none;
+    font-size: 18px;
+  }
+  
+  /* Style for the search input */
+  .nav-tabs input[type="search"] {
+    height: 40px; /* Adjust the height of the search input */
+    border: none; /* Remove input border */
+    border-radius: 20px; /* Add some border radius to make it round */
+    background-color: #f8f9fa; /* Background color for the search input */
+    padding: 10px 15px; /* Adjust padding as needed */
+    color: #000; /* Text color for the input */
+    font-weight: bold; /* Font weight for the input */
+    margin-left: 10px;
+    margin-right: 10px; /* Adjust the margin */
+  }
+  
+  /* Style for the search button */
+  .nav-tabs button[type="button"] {
+    border-radius: 20px; /* Add border radius to match the input */
+  }
+  
+  /* Remove the default outline on focus */
+  .nav-tabs input[type="search"]:focus {
+    outline: none;
+  }
+  
+  /* Adjust the search input width if needed */
+  .nav-tabs input[type="search"] {
+    width: 200px;
+  }
+  
+  .logo-container {
+    display: flex; /* Make the logo and text display in a row */
+    align-items: center; /* Vertically center the logo and text */
+    margin-right: 110px; /* Add margin to separate the logo from the links */
+  }
+  
+  .logo {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: red;
+    align-items: center;
+    margin-left: -70px;
+    
+  }
+  
+  h1 {
+    font-size: 35px;
+    margin-top: 5px;
+    align-items: center;
+    color: white;
+    margin-right:500px;
+    margin-bottom:5px
+    
+  }
+  
+  .nav-link:hover {
+    /* Adjust the shadow properties as needed */
+    border-radius: 0px;
+  }

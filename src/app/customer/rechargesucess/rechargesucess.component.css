@@ -1,0 +1,25 @@
+.activation-card {
+    background-color: red; /* Red background color */
+    color: white; /* White text color */
+    padding: 20px; /* Adjust card padding */
+    text-align: center; /* Center align text */
+    width: 30%; /* Set the card width as needed */
+    margin: 0 auto; /* Center the card horizontally */
+    border-radius: 5px; /* Add rounded corners to the card */
+    margin-top: 10%;
+  }
+  
+  button {
+    background-color: white; /* White button color */
+    color: red; /* Red text color */
+    padding: 15px 30px; /* Increase button padding */
+    margin: 0 10px; /* Adjust the space between buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color:lightcoral /* Darker red on hover */
+    }
+  }
+  

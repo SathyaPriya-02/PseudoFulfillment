@@ -1,0 +1,204 @@
+img{
+	width: 100%;
+}
+.login {
+    height: 500px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+.login_box {
+    width: 700px; /* Adjust the width as needed */
+    height: 450px; /* Adjust the height as needed */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    bottom: 70%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.login_box .left{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+  font-size: 100%;
+
+  
+}
+.login_box .right{
+  width: 59%;
+  height: 100%  
+}
+.left .top_link a {
+    color: red;
+    font-weight: 400;
+    padding: 5px;
+}
+.left .top_link{
+  height: 20px;
+  
+}
+.left .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 40px;
+  font-size: large;
+  font-weight: 20%;
+  margin-left: -5px;
+
+}
+.left input {
+    border: 1px solid #4f30677d;
+    width: 80%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+    
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+/* .left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+} */
+.submit {
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-left: 35px;
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.right {
+	/* background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url(https://static.seattletimes.com/wp-content/uploads/2019/01/web-typing-ergonomics-1020x680.jpg); */
+	background: red;
+    color: #fff;
+	position: relative;
+}
+
+.right .right-text{
+  height: 90%;
+  position: relative;
+  transform: translate(0%, 45%);
+  align-items: center;
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: -10%;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+    color: red;
+}
+
+/* Adjust the OTP container */
+.otp-container {
+   /* Set background color */
+  padding: 10px; /* Add padding for spacing (adjust as needed) */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+   /* Add a shadow for depth */
+  margin-top: 20px; /* Adjust top margin for spacing */
+  size: 59;
+}
+
+/* Center the OTP container horizontally */
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the OTP input and button */
+.otp-container ng-otp-input,
+.otp-container button {
+  width: 100%; /* Make OTP input and button fill the container */
+}
+
+/* Adjust the font size of the OTP input */
+.otp-container ng-otp-input input {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Adjust the font size of the button */
+.otp-container button {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+
+.custom-red-button {
+  background-color: red;
+  color: white; /* Text color */
+  /* You can adjust other styles as needed */
+}
+
+.custom-button {
+  background-color: red;
+  color: white;
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 50%;
+}
+
+.button-text
+{
+  margin-right: 45%;
+  margin-left: 20px;
+}
+
+
+.custom-button {
+  background-color: salmon; /* Default background color */
+  color: white; /* Text color */
+
+  /* Add a transition for a smooth hover effect */
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: red; /* Background color on hover */
+}

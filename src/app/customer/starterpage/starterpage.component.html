@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="starterpage.component.css">
+<body>
+<div class="container">
+  <div class="card">
+    <div class="content">
+      <div class="left-content">
+        <div class="box">
+          <h1>Welcome to Plan Pro!</h1>
+          <p *ngIf="!showPlanDetails">Thank you for choosing Plan Pro for your mobile needs. Your SIM card information is below:</p>
+          <p *ngIf="!showPlanDetails"><strong>Phone Number:</strong> <input type="text" [(ngModel)]="phoneNumber" name="phoneNumber" placeholder="Enter your phone number"></p>
+          <p *ngIf="!showPlanDetails">
+            <a class="activation-link" (click)="showPlanDetails = true">Activate Your Account</a>
+          </p>
+          <p *ngIf="showPlanDetails">We're excited to have you on board. Enjoy the world of Plan Pro!</p>
+          <p *ngIf="showPlanDetails"><strong>Plan Name:</strong> Starter Pack</p>
+          <p *ngIf="showPlanDetails"><strong>Plan Price:</strong> ₹399</p>
+          <p *ngIf="showPlanDetails"><strong>Validity:</strong> 60 days</p>
+          <button *ngIf="showPlanDetails" (click)="handlePayment()">Pay Now</button>
+        </div>
+      </div>
+      <div class="right-content">
+        <img src="assets/images/simcard3.png" alt="Activation Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>

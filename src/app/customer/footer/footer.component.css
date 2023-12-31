@@ -1,0 +1,22 @@
+
+footer {
+    position: absolute;
+    bottom: -24cqmax;
+    width: 100%;
+    background-color: red; /* Change this to your desired background color */
+    color: white;
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+footer section {
+    display: inline-block;
+    margin: 0 20px; /* Adjust margin between sections as needed */
+    vertical-align: top;
+}
+
+.social-icon {
+    color: white;
+}
+
+
+
